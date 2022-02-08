@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: 'Avant Guard_1';
-    src: url(./Fonts/AvantGuard.woff);
+    src: url(./AvantGuard.woff);
     font-weight: bold;
 }
 
@@ -33,6 +33,7 @@
     margin-top: 5vh;
     font-family: 'Avant Guard_1';
     font-size:3vw;
+    font-weight: 5000;
     border-radius:100px;
     border:none;
     cursor: pointer;
