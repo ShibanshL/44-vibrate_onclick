@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="Vb">
+        <h1>Vibrate</h1>
+        <button>Vibrate</button>
+    </div>
+
+    <script>
+        var h1 = document.querySelector('.Vb h1')
+        var buttonOG = document.querySelector('.Vb button')
+
+        // buttonOG.onclick = () => {
+        //     h1.style.animation = 'anime 3s ease infinite alternate-reverse'
+        // }
+        buttonOG.addEventListener('click',()=>{
+            h1.style.animation = 'anime 3s ease infinite alternate-reverse'
+            navigator.vibrate(1000)
+            setTimeout(()=>{
+                    h1.style.animation = 'none'
+                },4000)
+        })
+
+        
+
+
+    </script>
+</body>
+</html>
